@@ -47,7 +47,6 @@ const partition = (list, start, end) => {
     animations.push({
         type: AnimationTypes.PIVOT,
         pivotIndex,
-        pivotIndex,
     });
     animations.push({ type: AnimationTypes.SWAP, i: pivotIndex, j: end });
     swap(list, pivotIndex, end);

@@ -7,7 +7,6 @@ export const bubblesortAnimations = (list) => {
 };
 
 export const bubblesort = (list) => {
-    let j = list.length - 1;
     for (let j = list.length - 1; j >= 0; j--)
         for (let i = 1; i <= j; i++) {
             animations.push({ type: AnimationTypes.COMPARE, i, j: i - 1 });

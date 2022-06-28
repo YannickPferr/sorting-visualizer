@@ -8,7 +8,7 @@ const getWindowSize = () => {
     return { innerWidth, innerHeight };
 };
 
-export const SortingArea = ({}) => {
+export const SortingArea = () => {
     const DEFAULT_LIST_SIZE = 10;
     const DEFAULT_SORTING_SPEED = 250;
 
@@ -98,32 +98,32 @@ export const SortingArea = ({}) => {
                                 'red';
                 }
 
-                if (animation.type == AnimationTypes.COMPARE) {
+                if (animation.type === AnimationTypes.COMPARE) {
                     bars[animation.i].style.backgroundColor = 'dodgerblue';
                     bars[animation.j].style.backgroundColor = 'dodgerblue';
-                } else if (animation.type == AnimationTypes.SWAP_FOUND) {
+                } else if (animation.type === AnimationTypes.SWAP_FOUND) {
                     bars[animation.i].style.backgroundColor = 'purple';
                     bars[animation.j].style.backgroundColor = 'purple';
-                } else if (animation.type == AnimationTypes.SWAP) {
+                } else if (animation.type === AnimationTypes.SWAP) {
                     bars[animation.i].style.backgroundColor = 'purple';
                     bars[animation.j].style.backgroundColor = 'purple';
                     swap(bars, animation.i, animation.j);
-                } else if (animation.type == AnimationTypes.PIVOT) {
+                } else if (animation.type === AnimationTypes.PIVOT) {
                     bars[animation.pivotIndex].style.backgroundColor = 'blue';
-                } else if (animation.type == AnimationTypes.PIVOT_COMPARE) {
+                } else if (animation.type === AnimationTypes.PIVOT_COMPARE) {
                     bars[animation.i].style.backgroundColor = 'dodgerblue';
                     bars[animation.j].style.backgroundColor = 'dodgerblue';
                     bars[animation.pivotIndex].style.backgroundColor = 'blue';
-                } else if (animation.type == AnimationTypes.PIVOT_SWAP_FOUND) {
+                } else if (animation.type === AnimationTypes.PIVOT_SWAP_FOUND) {
                     bars[animation.i].style.backgroundColor = 'purple';
                     bars[animation.j].style.backgroundColor = 'purple';
                     bars[animation.pivotIndex].style.backgroundColor = 'blue';
-                } else if (animation.type == AnimationTypes.PIVOT_SWAP) {
+                } else if (animation.type === AnimationTypes.PIVOT_SWAP) {
                     bars[animation.i].style.backgroundColor = 'purple';
                     bars[animation.j].style.backgroundColor = 'purple';
                     bars[animation.pivotIndex].style.backgroundColor = 'blue';
                     swap(bars, animation.i, animation.j);
-                } else if (animation.type == AnimationTypes.SPLIT) {
+                } else if (animation.type === AnimationTypes.SPLIT) {
                     for (let i = animation.left[0]; i < animation.left[1]; i++)
                         bars[i].style.backgroundColor = 'purple';
                     for (

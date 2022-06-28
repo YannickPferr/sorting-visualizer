@@ -1,4 +1,4 @@
-const animations = [];
+let animations = [];
 
 export const mergesortAnimations = (list) => {
     animations = [];
