@@ -1,0 +1,11 @@
+export const AnimationTypes = {
+    COMPARE: 'COMPARE',
+    SWAP_FOUND: 'SWAP_FOUND',
+    SWAP: 'SWAP',
+    SPLIT: 'SPLIT',
+    UNION: 'UNION',
+    PIVOT: 'PIVOT',
+    PIVOT_COMPARE: 'PIVOT_COMPARE',
+    PIVOT_SWAP_FOUND: 'PIVOT_SWAP_FOUND',
+    PIVOT_SWAP: 'PIVOT_SWAP',
+};
